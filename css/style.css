@@ -1,0 +1,614 @@
+@charset "UTF-8";
+
+/* 全体共通 */
+* {box-sizing: border-box;}
+/* https://developer.mozilla.org/ja/docs/Web/CSS/box-sizing */
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium","游ゴシック", "Yu Gothic", sans-serif;
+  margin: 0; padding: 0;
+  letter-spacing : 0.2em;}
+
+body{
+  background-image: url("../images/sky_00061.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;}
+
+/* transparent = 透明*/
+
+img{vertical-align: bottom;}
+
+a{text-decoration: none;}
+
+.tag1 h3{
+  font-size: 16px;
+  color: white;
+  border-left: 6px solid white;
+  padding-left: 12px;
+  margin: 20px 20px 80px 80px;
+  letter-spacing: 0.4em;}
+
+.tag2 h3{
+  font-size: 16px;
+  color: white;
+  border-left: 6px solid white;
+  padding-left: 12px;
+  margin: 200px 20px 0 80px;
+  letter-spacing: 0.4em;}
+
+.tag3 h3{
+  font-size: 16px;
+  color: white;
+  border-left: 6px solid white;
+  padding-left: 12px;
+  margin: 200px 20px 0 80px;
+  letter-spacing: 0.4em;}
+
+/* header */
+header{
+  position:absolute;  /*恐らくmain-visualにのみ対応*/
+  z-index: 100;
+  top: 0;
+  left: 0;                 
+  padding: 30px 4% 15px;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.3);
+  align-items: center;
+  display: flex;
+  justify-content: space-between}
+
+header h1{margin-top: 0;}
+
+header h1 a{
+  font-size: 38px;
+  color: white;
+  margin: 0 0 0 25px;
+  text-decoration: none;}
+
+header h1 a:hover{color: rgb(200, 200, 200);}
+
+header li {margin: 0 0 0 15px;}
+
+
+/* ul */
+.page{
+  list-style: none;
+  display: flex;
+  margin: 0;}
+
+.page a{
+  color:white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 15px 20px 0 20px;}
+
+.page a:hover{color: gray;}
+
+/* ui-2 */
+.snsLinks{
+  padding: 20px 20px 0 20px;
+  list-style: none;
+	display: flex;
+  justify-content: flex-end;
+  margin: 0;}
+
+.snsLinks i{
+  font-size: 18px;
+  padding: 0 0 0 5px;}
+
+.fa-brands:hover:before{
+  color: black;}
+
+
+/* ニコニコ動画は公式配布画像を使用 */
+.nico {
+  width: 20px;
+  height: 18px;
+  background: url('../images/nc296562_niko-w.png') no-repeat;
+  background-size: cover;
+  margin: 4px 0 0 0;}
+
+.nico:hover{background:url('../images/nc296561_niko-b.png') no-repeat;background-size: cover;}
+
+/*footer*/
+footer{
+  padding: 30px 4% 15px;
+  margin-top: 80px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; */
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  display: flex;
+  justify-content: center;}
+
+/* ul2 */
+.page2{
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;}
+
+.page2 a{
+  color:white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px;}
+
+.page a:hover{color: gray;}
+
+
+/* pagetopボタン */
+html {scroll-behavior: smooth;}
+
+.pagetop {
+  height: 45px;
+  width: 45px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: rgb(91, 164, 238);
+  /* border: solid 2px white; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  scroll-behavior: smooth;}
+
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  transform: translateY(20%) rotate(-45deg);}
+
+
+/* home-page */
+.home-page{  
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 1100px;
+  margin: 0 auto;}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 60px 0 60px;
+}
+
+.prof1{
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 60px;}
+
+.prof1 h1{
+  width: 300px;
+  font-size: 38px;
+  color: rgb(15, 114, 220);
+  margin: 20px 0 0 0;}
+  
+.prof1 img{
+  width: 256px;
+  height: 256px;
+  margin: 20px 0;}
+
+
+.prof2{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 60px 20px 20px;}
+
+.prof2 p{
+  font-size: 18px;
+  color: black;
+  letter-spacing: 0em;
+  margin: 60px 0 50px 0;}
+
+.links2{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 40px 40px 0 0;}
+    
+.links2 i{
+  margin: 0; 
+  padding: 0;
+  font-size: 26px;}
+  
+.links2 a{padding: 0 8px;}
+
+.dou{
+  width: 26px;
+  height:24px;
+  background: url('../images/nc296562_niko-w.png') no-repeat;
+  background-size: cover;
+  margin: 0 0 8px 0;}
+  
+.dou:hover{background:url('../images/nc296561_niko-b.png') no-repeat;background-size: cover;}
+
+.links3{
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 10px 10px 10px 0;}
+  
+.links3 i{font-size: 20px;}
+
+.links3 a{padding-left: 8px;}
+
+.ga {
+  width: 22px;
+  height: 20px;
+  background: url('../images/nc296562_niko-w.png') no-repeat;
+  background-size: cover;
+  margin: 0 0 4px 0;}
+
+.ga:hover{background:url('../images/nc296561_niko-b.png') no-repeat;background-size: cover;}  
+
+
+
+
+/* music-page*/
+/* フィルタ */
+.tab-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  max-width: 1100px;
+  margin-top: 80px;}
+
+.tab-2 > label {
+  flex: 1 1;
+  order: -1;
+  opacity: .5;
+  min-width: 70px;
+  padding: .6em 1em;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(15, 114, 220);
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing : 0em;
+  margin-bottom: 40px;}
+
+.tab-2 > div {
+  display: none;
+  width: 100%;}
+
+.tab-2 > label:hover {opacity: .8;}
+
+.tab-2 input {display: none;}
+
+.tab-2 label:has(:checked) {opacity: 1;}
+
+.tab-2 label:has(:checked) + div {display: block;}
+
+/* 公式サイトボタン */
+.koushiki{width: 350px;}
+
+.button-51 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  margin: 20px 75px;
+  /* padding: .9em 2em; */
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: #333;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.button-51::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center left;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(15, 114, 220);
+  content: '';
+  transition: transform .3s ease;
+}
+
+.button-51:hover::after {
+  transform: scaleX(1);
+}
+
+/* MUSICページ */
+.music-page{  
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  white-space: nowrap;}
+
+.music-page h2{
+  width: 1000px;
+  font-size: 28px;
+  color: rgb(15, 114, 220);
+  letter-spacing : 0em;
+  margin: 20px 0 0 0;}
+
+.music-page h4{
+  width: 1000px;
+  font-size: 14px;
+  color: black;
+  margin: 0 0 20px 0;}
+
+.music-page p{
+  font-size:20px;
+  color: rgb(15, 114, 220);
+  letter-spacing : 0em;}
+
+.content{
+  color: black;
+  font-size: 16px;
+  letter-spacing : 0em;
+  margin: 20px 0 0 0;}
+
+
+/* single */
+.single-wrapper{
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 7px;
+}
+
+
+.box {
+  display:block; 
+  position:relative;
+  text-decoration:none;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin-top: 40px;
+  padding-bottom: 20px;
+	width: calc((100% - 80px) / 3);}
+   
+.box:before{
+  content:"";
+  display:block;
+  padding-top: 100%;/*ここには横幅に対して縦が何%になるかを記述*/
+}
+
+.box img{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  transition:0.3s;
+  display:block;
+  width:300px;
+  margin: 20px;}
+
+.box:hover img{transform:scale(1.1);}
+
+.thumbnai{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;}
+
+.box h3{
+  margin: 10px 0; 
+  font-size: 18px;
+  color: rgb(15, 114, 220);
+  letter-spacing : 0em;}
+
+/* albam・ep 共通*/
+.name{
+  width: 1100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  margin: 40px 0 60px 0;} 
+
+.name img{
+  width: 350px;
+  height: 350px;
+  margin: 20px 0;}
+
+
+/* albam */
+/* Heceforth */
+.text3{  
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 100px;}  
+
+.list3{
+  display: flex;
+  justify-content: center;
+  margin: 100px 260px 40px 10px;}
+
+/* SEASIDE */
+.text2{  
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 240px 100px;}  
+
+.list2{
+  display: flex;
+  justify-content: center;
+  margin: 100px 20px 40px 10px;}
+
+/* 未完成エイトビーツ */
+.text1{  
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 120px 100px;}
+
+.list1{
+  display: flex;
+  justify-content: center;
+  margin: 100px 240px 40px 10px;}
+
+
+/* EP */
+/* Postscript */
+.textC{  
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 100px;}  
+
+.listC{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: wrap;
+  margin: 120px 200px 160px 10px;}
+
+/* Light in the Distance */
+.textB{  
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 100px;}  
+  
+.listB{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: wrap;
+  margin: 120px 200px 120px 60px;}
+
+/* 未収録OSC */
+.textA{  
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 100px;}  
+    
+.listA{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: wrap;
+  margin: 120px 100px 40px 60px;}
+
+/* link-page */
+
+.link-page{
+  width: 1100px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  /* background-color: rgba(255, 255, 255, 0.6); */
+}
+
+.link-page h2{
+  margin:5px 0; 
+  font-size: 24px;
+  color: white;
+  letter-spacing : 0em;
+  border-bottom: 3px solid white;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;}
+
+.link-page i{padding: 0 20px;}
+
+
+.umekomi{
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon{
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+
+.favi h2{
+  margin: 0;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favi a :hover{color: black;}
+
+
+.ni {
+  width: 28px;
+  height: 26px;
+  background: url('../images/nc296562_niko-w.png') no-repeat;
+  background-size: cover;
+  margin:6px 10px 10px 10px;}
+  
+.ni:hover{background:url('../images/nc296561_niko-b.png') no-repeat;background-size: cover;}  
+
+
+
+
+
+/* index.html　メインビジュアル */
+.main-visual{
+  position:relative;
+  margin-bottom: 80px;}
+
+.slideshow {
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+
+/* jQuery スライド */
+.slideshow {margin: 0 0 10px 0;
+	position:relative;
+	width:100%;
+  height: 750px;
+	overflow:hidden;}
+
+.slideshow img {position:absolute;
+  top:0;
+  left:0;
+  z-index:10;
+  width: 100%;}
+
+.slideshow img.active {z-index:30; }
+
+.slideshow img.last-active {z-index:20; }
